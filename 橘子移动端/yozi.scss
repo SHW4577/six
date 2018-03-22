@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    background: #F2F2F2;
+}
+@mixin dian {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.3);
+    font-weight: 900;
+    font-size: 20px;
+}
+//头部
+header {
+    width: 100%;
+    font-size: 14px;
+    .nav {
+        display: flex;
+        background: #599A3C;
+        height: 50px;
+        justify-content: space-around;
+        align-items: center;
+        img {
+            width: 50px;
+            height: 35px;
+        }
+        input {
+            width: 150px;
+            height: 30px;
+            border: 0;
+            border-radius: 10px;
+            padding: 0 3px;
+            line-height: 30px;
+        }
+        .tu {
+            position: absolute;
+            top: 13px;
+            right: 140px;
+            width: 21px;
+            height: 20px;
+        }
+        p {
+            color: #fff;
+        }
+    }
+    .banner {
+        width: 375px;
+        height: 230px;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .t-l {
+            @include dian position: absolute;
+            top: 40%;
+            left: 10px;
+        }
+        .t-r {
+            @include dian position: absolute;
+            top: 40%;
+            right: 10px;
+        }
+    }
+}
+$w: 60px;
+$f: 14px; //中间
+section {
+    //  background: #F2F2F2;
+    .con-l {
+        display: flex;
+        justify-content: space-around;
+        li {
+            margin-top: 15px;
+            img {
+                width: $w;
+                height: $w;
+            }
+            p {
+                text-align: center;
+                font-size: $f;
+            }
+        }
+    }
+    .con-r {
+        display: flex;
+        justify-content: space-around;
+        li {
+            margin-top: 15px;
+            margin-bottom: 5px;
+            img {
+                width: $w;
+                height: $w;
+            }
+            p {
+                text-align: center;
+                font-size: $f;
+            }
+        }
+    }
+}
+//大图部分
+.t {
+    // background:#F2F2F2;
+    overflow: hidden;
+    div {
+        width: 95%;
+        height: 160px;
+        margin: 10px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+//鲜果专区
+.x {
+    overflow: hidden;
+    margin: 20px 0;
+    .x-1 {
+        width: 20px;
+        height: 40px;
+        background: #599A3C;
+        float: left;
+        margin-left: 20px;
+        .x-2 {
+            width: 14px;
+            height: 40px;
+            background: #6CC943;
+        }
+    }
+    p {
+        font-size: 18px;
+        float: left;
+        margin-left: 5px;
+        margin-top: 8px;
+    }
+}
+
+.hui{
+    font-size: 12px;
+    color:#bbb;
+}
+.b {
+    margin:15px 10px;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        li {
+            img {
+                width: 160px;
+                height: 160px;
+            }
+            .b-0{
+                display: flex;
+                justify-content: space-around;
+                .b-1{
+                    font-size: 14px;
+                }
+                .b-2{
+                    p{
+                        color:#6CC943;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+//结尾
+#s{
+    color:#6CC943;
+}
+
+footer{
+    width:100%;
+   background:#fff;
+   border-top:1px solid darkgray;
+   position:fixed;
+   bottom:0;left:0;
+   ul{
+       display: flex;
+       justify-content: space-around;
+       li{
+           margin:10px 5px;
+           img{
+               width:30px;
+               height:30px;
+               margin-left:5px;
+               
+           }
+           p{
+               text-align: center;
+               font-size: 13px;
+               color:#ccc;
+           }
+       }
+   } 
+}
+
+
+.n{
+    height:70px;
+}
